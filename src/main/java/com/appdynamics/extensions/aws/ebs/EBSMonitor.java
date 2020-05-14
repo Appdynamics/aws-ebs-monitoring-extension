@@ -26,7 +26,7 @@ import static com.appdynamics.extensions.aws.Constants.METRIC_PATH_SEPARATOR;
  */
 public class EBSMonitor extends SingleNamespaceCloudwatchMonitor<Configuration> {
 
-    private static final Logger LOGGER = ExtensionsLoggerFactory.getLogger("com.singularity.extensions.aws.EBSMonitor");
+    private static final Logger LOGGER = ExtensionsLoggerFactory.getLogger(EBSMonitor.class);
 
     private static final String DEFAULT_METRIC_PREFIX = String.format("%s%s%s%s",
             "Custom Metrics", METRIC_PATH_SEPARATOR, "Amazon EBS", METRIC_PATH_SEPARATOR);
